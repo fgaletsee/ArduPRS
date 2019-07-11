@@ -10,6 +10,14 @@
 #define serverport 14580
 //Location
 //Format must have same number of digits!
+//Hinweis:
+//In [1] auf Seite 23-24 ist angegeben wie man die Koordinaten umrechnet: "4903.50N is 49 degrees 3 minutes 30"  seconds north.
+//Dazu Nutze ich die Webseite [2] und suche mir dort die Position in GMS (Grad Minute Sekunde). Zum Beispiel ist der Deutsche Bundestag auf 52° 31' 12.36''    Die APRS Koordinaten wären also 5231.20N. Auf Die 20 kommt man, indem man die Sekunden umrechnet mit (12.36/60)*100 also als Dezimaldarstellung. 60 Sekunden =1.0, 30Skunden =0.5 usw..
+//Das selbe gilt für 13° 22' 22.8'' -> 01322.37E: (22.6/60)*100 =37. Die führende Null nicht vergessen!
+
+//Quelle:
+//[1] http://www.aprs.org/doc/APRS101.PDF
+//[2] https://www.gpskoordinaten.de/gps-koordinaten-konverter
 #define NS "4817.96N"
 #define EW "01054.70E"
 
